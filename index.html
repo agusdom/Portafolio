@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="Contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Agustín</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="Seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="MostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="Contenido-banner">
+            <div class="contenedor-img">
+                <img src="images/FotoPerfil.png" alt="">
+            </div>
+            <h1>Agustín Dominguez</h1>
+            <h2>Unity Developer Jr</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/agustin-dominguez-6752ba1b1/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/agusdom"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.com/channels/agusdom"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="Contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola,soy Agustin Dominguez</span> un apasionado de la programación y del desarrollo de videojuegos,
+                exigente conmigo mismo para lograr mis metas de destacar en la industria.
+                Actualmente me dedico al desarrollo de videojuegos en C# por mi cuenta,aunque tambien tengo experiencia
+                en C,Java y PHP.</p>
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            <i class="fa-solid fa-cake-candles"></i>07/11/1995
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            <i class="fa-solid fa-mobile"></i>2236244390
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <i class="fa-solid fa-envelope"></i>agustindominguez95@hotmail.com
+                        </li>
+                    </ul>
+                </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Interes</h3>
+                    <div class="Contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>DEV</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SKILLS-->
+    <section id="skills" class="skills">
+        <div class="Contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Habilidades Tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GIT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Habilidades Blandas-->
+                <div class="col">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resiliencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Feedback</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Solución de problemas y conflictos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="Contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="images/Portafolio2.png" alt="">    
+                    <div class="overlay">
+                        <h3>Laberinto</h3>
+                        <p>Completa el laberiento antes que se termine el tiempo</p>
+                        <ul class="actions">
+                            <a href="https://play.unity.com/es/games/3f4ceedf-a934-4daf-aba5-55639c079c5c/equilibrista"
+                                    class="button">Jugar</a>
+                        </ul>
+                    </div>
+                </div>    
+                <div class="proyecto">
+                    <img src="images/Portafolio3.png" alt="">   
+                    <div class="overlay">
+                        <h3>Equilibrista</h3>
+                        <p>Llega lo mas lejos que puedas antes de caer al vacio</p>
+                        <ul class="actions">
+                            <a href="https://play.unity.com/es/games/3f4ceedf-a934-4daf-aba5-55639c079c5c/equilibrista"
+                                    class="button">Jugar</a>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <form method="post" action="send_email.php">
+    <section id ="contacto" class="contacto">
+        <div class="Contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" name="name" id="name" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" rows="5" required placeholder="Mensaje"></textarea>
+                    <button type="submit" class="button submit">
+                        Envia Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/agustin-dominguez-6752ba1b1/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/agusdom"><i class="fa-brands fa-github"></i></a>
+            <a href="https://discord.com/channels/agusdom"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
