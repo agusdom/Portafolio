@@ -234,13 +234,14 @@
             </div>
     </section>
     <!--SECCION CONTACTO-->
-    <form method="post" action="send_email.php">
+    <form action="https://api.web3forms.com/submit" method="POST" action="send_email.php">
     <section id ="contacto" class="contacto">
         <div class="Contenido-seccion">
             <h2>Contacto</h2>
             <div class="fila">
                 <!--Formulario-->
                 <div class="col">
+                    <input type="hidden" name="access_key" value="c0b15e1e-ac43-4a15-a531-d0718eeafc4d">
                     <input type="text" name="name" id="name" placeholder="Tu Nombre" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                     <textarea name="message" id="message" rows="5" required placeholder="Mensaje"></textarea>
